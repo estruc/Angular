@@ -7,13 +7,15 @@ import { CreateCategoriaComponent } from './create-categoria/create-categoria.co
 import { DetailsCategoriaComponent } from './details-categoria/details-categoria.component';
 import { ListCategoriaComponent } from './list-categoria/list-categoria.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateCategoriaComponent } from './update-categoria/update-categoria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateCategoriaComponent,
     DetailsCategoriaComponent,
-    ListCategoriaComponent
+    ListCategoriaComponent,
+    UpdateCategoriaComponent
   ],
   imports: [
     BrowserModule,

@@ -44,5 +44,8 @@ export class ListCategoriaComponent implements OnInit {
     this.router.navigate(['detalhe', id]);
   }
 
+  alterarCategoria(id: number){
+    this.router.navigate(['alterarCategoria', id]);
+  }
 
 }

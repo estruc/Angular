@@ -1,0 +1,12 @@
+<h3>Alterar Categoria</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="nome" 
+      required [(ngModel)]="categoria.nome" name="nome">
+    </div>
+    
+    <button type="submit" class="btn btn-success">Alterar</button>
+  </form>
+</div>

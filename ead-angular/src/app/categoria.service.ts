@@ -33,4 +33,5 @@ export class CategoriaService {
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 
+
 }
