@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CreateCategoriaComponent } from './create-categoria/create-categoria.component';
 import { DetailsCategoriaComponent } from './details-categoria/details-categoria.component';
 import { ListCategoriaComponent } from './list-categoria/list-categoria.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ListCategoriaComponent } from './list-categoria/list-categoria.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule  
   ],
   providers: [],

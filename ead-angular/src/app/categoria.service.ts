@@ -17,4 +17,8 @@ export class CategoriaService {
     return this.http.get(`${this.baseUrl}`);
   }
 
+  createCategoria(categoria: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}`, categoria);
+  }
+
 }

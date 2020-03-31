@@ -1,1 +1,15 @@
-<p>create-categoria works!</p>
+<h3>Adicionar Categoria</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" required [(ngModel)]="categoria.nome" name="nome">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Categoria cadastrada com sucesso</h4>
+  <!-- <button class="btn btn-success" (click)="newCategoria()">Adicionar</button> -->
+</div>
