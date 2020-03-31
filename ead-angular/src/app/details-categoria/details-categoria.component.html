@@ -1,1 +1,13 @@
-<p>details-categoria works!</p>
+<h2>Categoria Detalhe</h2> 
+
+<hr/>
+<div *ngIf="categoria">
+  <div>
+    <label><b>Nome: </b></label> {{categoria.nome}}
+  </div>
+ 
+</div>
+
+<br>
+<br>
+<button (click)="listaCategorias()" class="btn btn-primary">Voltar para Lista de Categoria</button><br>

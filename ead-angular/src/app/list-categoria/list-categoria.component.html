@@ -7,12 +7,15 @@
         <thead>
           <tr>
             <th>Nome</th>
+            <th>Acao</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let categoria of categorias | async">
             <td>{{categoria.nome}}</td>
-           </tr>
+            <td><button (click)="apagarCategoria(categoria.id)" class="btn btn-danger">Delete</button></td>
+            <button (click)="categoriaDetalhe(categoria.id)" class="btn btn-info" style="margin-left: 10px">Detalhe</button> 
+          </tr>
         </tbody>
       </table>
     </div>

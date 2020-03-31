@@ -25,4 +25,24 @@ export class ListCategoriaComponent implements OnInit {
     this.categorias = this.categoriaService.getCategoriaList();
   }
 
+  apagarCategoria(id: number) {
+    this.categoriaService.deleteCategoria(id)
+      .subscribe(
+        data => {
+          console.log(data);
+          this.recarregarListaCategoria();
+        },
+        error => console.log(error));
+  }
+
+
+  recarregarListaCategoria() {
+    this.categorias = this.categoriaService.getCategoriaList();
+  }
+
+  categoriaDetalhe(id: number){
+    this.router.navigate(['detalhe', id]);
+  }
+
+
 }
